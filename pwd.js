@@ -1,9 +1,7 @@
-const pwd = function (cmd) {
+const pwd = function (cmd, done) {
   if (cmd === 'pwd') {
-    process.stdout.write(__dirname);
+    done(__dirname);
   }
-
-  process.stdout.write('\nprompt > ');
 };
 
 module.exports = pwd;
