@@ -1,0 +1,23 @@
+{
+  "name": "bash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdl39/bash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pdl39/bash/issues"
+  },
+  "homepage": "https://github.com/pdl39/bash#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
