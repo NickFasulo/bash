@@ -10,8 +10,7 @@ module.exports = function (cmd) {
         throw err;
       }
       else {
-        process.stdout.write(data);
-        process.stdout.write('\nPrompt > ');
+        return data
       }
     })
   }

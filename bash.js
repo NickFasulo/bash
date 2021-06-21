@@ -10,8 +10,15 @@ process.stdout.write('prompt > ');
 process.stdin.on('data', data => {
   const cmd = data.toString().trim(); // remove the newline
 
-  pwd(cmd);
-  ls(cmd);
-  cat(cmd);
-  curl(cmd);
+  function getOutput() {
+    pwd(cmd);
+    ls(cmd);
+    cat(cmd);
+    curl(cmd);
+  }
+
+  const done = output => {
+    process.stdout.write(output);
+    process.stdout.write('\nPrompt > ');
+  };
 });
